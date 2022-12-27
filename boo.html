@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+      <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+      <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+      
+   <style>
+    body{
+    font-family:Montserrat;
+    overflow-y:hidden;
+    overflow-x:hidden;    
+    }  
+
+
+    #barcolor{
+    position: absolute;
+    top: 45%;
+    left: -28%;
+    width: 55%;
+    height:5%;    
+    background:linear-gradient(to right, yellow, red, #D700B6, purple, #0036FF, #33ACFF, #00FF1F , #24D700);    
+    transform: rotate(90deg);
+    }
+
+
+
+#home{
+filter: invert(100%);
+}
+
+.datepicker-days{cursor:pointer;}
+
+
+   </style>
+
+
+  </head>
+
+  <body>
+  
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <img src="https://lh3.google.com/u/0/d/1ikwQKoOtAYmUdG7OUD9bXIrL3fInZoYU=w1366-h617-iv1" style="position:absolute;top:12%;left:30%;width:70%" id="imgscrita"> 
+  <img src="https://lh3.google.com/u/0/d/1xVTVX7DmCP9HS7fIWElMXyzg1-Cltw5A=w1366-h617-iv1" style="position:absolute;top:16%;left:20%;width:30%" id="imgboo"> 
+
+
+  <div id="navbar" style="background:;position:absolute;top:0%;left:2%;width:8%;height:100%;">
+
+  <a style="position:absolute;left:28%;top:24%;border-radius:100px;background:#00C9FF !important;width:45%;height:8%;" id="circle"> </a>
+
+  <img src="https://lh3.google.com/u/0/d/15OXQ9X6Wmzz7PRSSbM4n5_l6ciG4MQ3s=w1366-h617-iv1" style="position:absolute;top:10%;left:20%;width:60%;cursor:pointer;" id="imglogo"> 
+  <img src="https://lh3.google.com/u/0/d/1B8O96iujwdlBnDb6EfovuEa71QXqWnpC=w1366-h617-iv1" style="position:absolute;top:25%;left:35%;width:30%;cursor:pointer;" id="home"> 
+  <img src="https://lh3.google.com/u/0/d/15-tTlzc75BBiHzLKE-0VuiOceOqMBDOy=w1366-h617-iv1" style="position:absolute;top:41%;left:38%;width:25%;opacity:50%;cursor:pointer;" id="form"> 
+  <img src="https://lh3.google.com/u/0/d/1pfh49Ojm5f1vB0kDgdffKnsfgrFgdgDx=w768-h617-iv1" style="position:absolute;top:55.3%;left:35%;width:30%;opacity:50%;cursor:pointer;" id="pesqsa"> 
+  <img src="https://lh3.google.com/u/0/d/1RC52XtLK5hLQAoGFaukZGJvBttBSnp9M=w768-h617-iv1" style="position:absolute;top:70.2%;left:39.7%;width:27%;opacity:50%;cursor:pointer;" id="users"> 
+
+
+
+
+<script id="Home">
+
+  document.getElementById("home").addEventListener('click', function() {
+  document.getElementById("circle").style.top = "24%"; 
+  document.getElementById("form").style.filter = "invert(0%)"; 
+  document.getElementById("form").style.opacity = "50%";
+  document.getElementById("home").style.filter = "invert(100%)";
+  document.getElementById("home").style.opacity = "100%";
+  document.getElementById("pesqsa").style.filter = "invert(0%)"; 
+  document.getElementById("pesqsa").style.opacity = "50%";
+  document.getElementById("users").style.filter = "invert(0%)"; 
+  document.getElementById("users").style.opacity = "50%";
+  document.getElementById("imgscrita").style.left = "30%";
+  document.getElementById("imgscrita").style.transition = "2s";
+  document.getElementById("imgboo").style.top = "16%";
+  document.getElementById("imgboo").style.transition = "3s";
+  document.getElementById("formulario").style.top = "200%"; 
+  document.getElementById("formulario").style.transition = "2s";
+
+}); 
+
+</script>  
+
+
+
+
+
+
+
+<script id="Formularios">
+
+  document.getElementById("form").addEventListener('click', function() {
+  document.getElementById("formulario").style.top = "0%"; 
+  document.getElementById("formulario").style.transition = "2s";
+  document.getElementById("circle").style.top = "39%"; 
+  document.getElementById("form").style.filter = "invert(100%)"; 
+  document.getElementById("form").style.opacity = "100%";
+  document.getElementById("home").style.filter = "invert(0%)";
+  document.getElementById("home").style.opacity = "50%";
+  document.getElementById("pesqsa").style.filter = "invert(0%)"; 
+  document.getElementById("pesqsa").style.opacity = "50%";
+  document.getElementById("users").style.filter = "invert(0%)"; 
+  document.getElementById("users").style.opacity = "50%";
+  document.getElementById("imgscrita").style.left = "200%";
+  document.getElementById("imgscrita").style.transition = "2s";
+  document.getElementById("imgboo").style.top = "-200%";
+  document.getElementById("imgboo").style.transition = "3s";
+
+
+}); 
+
+</script>  
+
+
+
+
+<script id="Pesquisar Chamado">
+
+  document.getElementById("pesqsa").addEventListener('click', function() {
+  document.getElementById("circle").style.top = "54%"; 
+  document.getElementById("form").style.filter = "invert(0%)"; 
+  document.getElementById("form").style.opacity = "50%";
+  document.getElementById("home").style.filter = "invert(0%)";
+  document.getElementById("home").style.opacity = "50%";
+  document.getElementById("users").style.filter = "invert(0%)"; 
+  document.getElementById("users").style.opacity = "50%";
+  document.getElementById("pesqsa").style.filter = "invert(100%)";
+  document.getElementById("pesqsa").style.opacity = "100%";
+  document.getElementById("imgscrita").style.left = "200%";
+  document.getElementById("imgscrita").style.transition = "2s";
+  document.getElementById("imgboo").style.top = "-200%";
+  document.getElementById("imgboo").style.transition = "3s";
+  document.getElementById("formulario").style.top = "200%"; 
+  document.getElementById("formulario").style.transition = "2s";
+}); 
+
+</script>  
+
+
+
+
+<script id="Cadastro de Empresas">
+
+  document.getElementById("users").addEventListener('click', function() {
+  document.getElementById("circle").style.top = "69%"; 
+  document.getElementById("form").style.filter = "invert(0%)"; 
+  document.getElementById("form").style.opacity = "50%";
+  document.getElementById("home").style.filter = "invert(0%)";
+  document.getElementById("home").style.opacity = "50%";
+  document.getElementById("pesqsa").style.filter = "invert(0%)";
+  document.getElementById("pesqsa").style.opacity = "50%";
+  document.getElementById("users").style.filter = "invert(100%)";
+  document.getElementById("users").style.opacity = "100%";
+  document.getElementById("imgscrita").style.left = "200%";
+  document.getElementById("imgscrita").style.transition = "2s";
+  document.getElementById("imgboo").style.top = "-200%";
+  document.getElementById("imgboo").style.transition = "3s";
+  document.getElementById("formulario").style.top = "200%"; 
+  document.getElementById("formulario").style.transition = "2s";
+}); 
+
+</script>  
+
+
+
+</div>
+
+
+<form action="https://api.sheetmonkey.io/form/m8Xw41tQ4ovb3fLP6e7ieg" method="post" style="background:#fff;position:absolute;top:200%;left:15%;width:85%;height:100%;" id="formulario">
+
+
+
+<select class="form-select form-select-sm" aria-label=".form-select-sm example" style="background:#fff;position:absolute;font-size:15px;top:25%;left:0%;width:20%;font-family:Montserrat;border-radius:15px"  name="responsavel" required />
+  <option selected required />Responsável</option>
+  <option value="Erika">Erika</option>
+  <option value="Laura">Laura</option>
+  <option value="Victor">Victor</option>
+</select>
+
+<input class="form-control" type="text" placeholder="Data do Chamado" aria-label="default input example" style="font-size:15px;position:absolute;top:20%;left:46%;width:20%;font-family:Montserrat;display:none;">
+      
+      
+        <div class="col-md-3" style="position:absolute;top:22%;left:45%;width:21%;font-family:Montserrat;" id="form2" required />
+                <div class="form-group">
+                    <label for="data-pagamento">Data Chamado</label>
+                    <div class="input-group date">
+                        <input type="text" id="form2" name="datapagamento"
+                               value=" "
+                               class="form-control"/ style="font-family:Montserrat;" >
+                        <div class="input-group-addon" style="position:absolute;top:0%;left:105%;width:0%;font-family:Montserrat;cursor:pointer;display:none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Plugin pro Datapicker novo -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js'></script>
+    <script>
+     $('.input-group.date').datepicker({format: "dd/mm/yyyy"});
+    </script>
+
+
+<select class="form-select form-select-sm" aria-label=".form-select-sm example" style="font-size:15px;background:#fff;position:absolute;top:25%;left:23%;width:20%;font-family:Montserrat;border-radius:15px" id="atividade" name="Empresas" required />
+      <option value="" disabled selected>empresa</option>
+      <option value="">GOOG</option>
+</select>
+
+<input class="form-control" type="text" name="idkchamado" placeholder="IDK Chamado" aria-label="default input example" style="position:absolute;top:25%;left:69%;width:20%;font-family:Montserrat;" id="obs" required />
+
+
+
+
+<input class="form-control" type="text" name="ndpedido" placeholder="ND/NU/Pedido" aria-label="default input example" style="position:absolute;top:36%;left:1%;width:17%;font-family:Montserrat;" id="form5" required />
+
+<input class="form-control" type="text" placeholder="Data Emissão" aria-label="default input example" style="position:absolute;top:36%;left:24%;width:17%;font-family:Montserrat;display:none;" >
+
+        <div class="col-md-3" style="position:absolute;top:33%;left:22%;width:21%;font-family:Montserrat;" required />
+                <div class="form-group">
+                    <label for="data-pagamento">Data Emissão</label>
+                    <div class="input-group date">
+                        <input type="text" id="form6" name="dataemissao"
+                               value=" "
+                               class="form-control"/ style="font-family:Montserrat;">
+                        <div class="input-group-addon" style="position:absolute;top:0%;left:105%;width:15%;font-family:Montserrat;cursor:pointer;display:none;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js'></script>
+    <script>
+     $('.input-group.date').datepicker({format: "dd/mm/yyyy"});
+    </script>
+
+
+<input class="form-control" type="text"  name="Valor Baixado" placeholder="Valor Baixado" aria-label="default input example" style="position:absolute;top:36%;left:46%;width:20%;font-family:Montserrat;" id="form7" required />
+
+<input class="form-control" type="text" name="Valor Depositado" placeholder="Valor Depositado" aria-label="default input example" style="position:absolute;top:36%;left:69%;width:20%;font-family:Montserrat;" id="form8" required />
+
+
+
+<input class="form-control" type="text" placeholder="Data do Deposito" aria-label="default input example" style="position:absolute;top:48%;left:1%;width:17%;font-family:Montserrat;display:none">
+
+        <div class="col-md-3" style="position:absolute;top:45%;left:-0.2%;width:21%;font-family:Montserrat;" required />
+                <div class="form-group">
+                    <label for="data-pagamento">Data Deposito</label>
+                    <div class="input-group date">
+                        <input type="text" id="form9" name="datadeposito"
+                               value=" "
+                               class="form-control"/ style="font-family:Montserrat;">
+                        <div class="input-group-addon" style="position:absolute;top:0%;left:105%;width:15%;font-family:Montserrat;cursor:pointer;display:none;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js'></script>
+    <script>
+     $('.input-group.date').datepicker({format: "dd/mm/yyyy"});
+    </script>
+
+
+
+<input class="form-control" type="text"  name="recebimento" placeholder="Recebimento" aria-label="default input example" style="position:absolute;top:48%;left:24%;width:17%;font-family:Montserrat;" id="form10" required />
+
+<input class="form-control" type="text"  name="link" placeholder="Link da Planilha" aria-label="default input example" style="position:absolute;top:48%;left:46%;width:43%;font-family:Montserrat;" id="form11" required />
+
+
+
+<input class="form-control" type="text" name="observacao"  placeholder="Observação"  aria-label="default input example" style="position:absolute;top:60%;left:1%;width:48%;font-family:Montserrat;" id="form12" required />
+
+<input  value="Salvar" style="background:#00C9FF;color:#fff;position:absolute;font-size:20px;top:75%;left:0%;width:10%;height:7%;border-radius:25px;border-color:#00C9FF;cursor:pointer;" id="submit" type="submit"></input >
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<script>
+
+
+
+</script>
+
+
+
+
+</form>
+
+
+
+
+  <section id="barcolor"></section>
+  
+    
+  </body>
+
+
+
+
+</html>
